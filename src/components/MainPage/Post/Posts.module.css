@@ -1,0 +1,40 @@
+.wrapper {
+    height: fit-content;
+    max-width: 60%;
+    display: flex;
+    margin-top: 3vmin;
+    border: 1px solid gray;
+    padding: 2vmin;
+    border-radius: 2vmin;
+}
+
+.wrapperAvaPost {
+    margin-top: 3vmin;
+}
+
+.avaPost {
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 50%;
+}
+
+.title {
+    margin: 0;
+    font-size: 3vmin;
+    margin-bottom: 2vmin;
+}
+
+.post {
+    margin-left: 6vmin;
+}
+
+.comments {
+    max-height: 20vmin;
+    overflow-x: scroll;
+}
+
+p {
+    margin: 0;
+    font-size: 1.8vmin;
+    letter-spacing: 0.5px;
+}

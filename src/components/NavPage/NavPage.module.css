@@ -1,0 +1,39 @@
+.nav {
+    background-color: gray;
+    height: 100%;
+    width: 40vmin;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperItem {
+    margin-top: 2vmin;
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: blue;
+}
+
+.myAva {
+    width: 15vmin;
+    border-radius: 50%;
+}
+
+.contacts {
+    margin-bottom: 5vmin;
+}
