@@ -1,7 +1,7 @@
 {
   "name": "test-task-mitra-soft",
   "version": "0.1.0",
-  "homepage": "https://mrbattka.github.io/testTask",
+  "homepage": "https://mrbattka.github.io/Test-Task-MitraSoft-/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
