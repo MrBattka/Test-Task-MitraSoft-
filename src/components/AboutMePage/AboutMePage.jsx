@@ -41,6 +41,20 @@ const AboutMePage = () => {
             <p>
               <b>Тестовое задание:</b>
             </p>
+            <div>
+              <p>
+                Git Pages:{" "}
+                <a href="https://MrBattka.github.io/test-task">
+                  https://MrBattka.github.io/test-task
+                </a>
+              </p>
+              <p>
+                Git Repositories:{" "}
+                <a href="https://github.com/MrBattka/Test-Task-MitraSoft-">
+                  https://github.com/MrBattka/Test-Task-MitraSoft-
+                </a>
+              </p>
+            </div>
             <p>
               <b>Мои проекты:</b>
             </p>
