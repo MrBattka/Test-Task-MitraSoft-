@@ -3,19 +3,15 @@
     max-width: 60%;
     display: flex;
     margin-top: 3vmin;
+    margin: 5vmin;
     border: 1px solid gray;
     padding: 2vmin;
-    border-radius: 2vmin;
+    border-radius: 1vmin;
+    box-shadow: 0 0 3px gray;
 }
 
 .wrapperAvaPost {
     margin-top: 3vmin;
-}
-
-.avaPost {
-    width: 12vmin;
-    height: 12vmin;
-    border-radius: 50%;
 }
 
 .title {
@@ -28,9 +24,28 @@
     margin-left: 6vmin;
 }
 
+.wrapperComments {
+    margin-top: 5vmin;
+}
+
+.arrow {
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+}
+
+.titleComments {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+}
+
 .comments {
-    max-height: 20vmin;
-    overflow-x: scroll;
+    max-height: 50vmin;
+    overflow-y: scroll;
 }
 
 p {

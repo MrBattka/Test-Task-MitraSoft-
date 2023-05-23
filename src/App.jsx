@@ -1,13 +1,12 @@
 import React, { useState } from "react";
-import { Provider, connect } from "react-redux";
+import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styles from "./App.module.css";
 import AboutMePage from "./components/AboutMePage/AboutMePage";
 import { MainPageContainer } from "./components/MainPage/MainPage";
 import NavPage from "./components/NavPage/NavPage";
-import ProfilePage from "./components/ProfilePage/ProfilePage";
+import { ProfilePageContainer } from "./components/ProfilePage/ProfilePage";
 import { store } from "./redux/redux-store";
-import { setPosts } from "./redux/posts-reduser";
 
 const App = ({ setPosts }) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -15,7 +14,7 @@ const App = ({ setPosts }) => {
   return (
     <div className={styles.wrapperApp}>
       <header className={styles.header}>
-        <div className={styles.menuBtn} onClick={() => setOpenMenu(!openMenu)}>
+        <div className={openMenu ? styles.menuBtnOpen : styles.menuBtnClosed} onClick={() => setOpenMenu(!openMenu)}>
           Menu
         </div>
         <NavPage openMenu={openMenu} setOpenMenu={setOpenMenu} />
@@ -27,12 +26,14 @@ const App = ({ setPosts }) => {
         <Routes>
           <Route path="/main" element={<MainPageContainer />} />
           <Route path="/aboutme" element={<AboutMePage />} />
-          <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/profile" element={<ProfilePageContainer />}>
+            <Route path=":userId" element={<ProfilePageContainer />} />
+          </Route>
         </Routes>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const AppMain = () => {
   return (

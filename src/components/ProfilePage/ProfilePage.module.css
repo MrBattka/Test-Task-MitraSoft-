@@ -1,0 +1,71 @@
+.wrapper {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vmin;
+}
+
+.profilePosts {
+    width: 50vw;
+}
+
+.wrapperBackBtn {
+    position: absolute;
+    margin: 4vmin;
+    font-size: 2.6vmin;
+    cursor: pointer;
+}
+
+.wrapperBackBtn a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.addInfo {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    border: 1px solid gray;
+    padding: 3vmin;
+    border-radius: 1vmin;
+    box-shadow: 0 0 3px gray;
+}
+
+.addInfo b {
+    color: red;
+    font-size: 2.5vmin;
+    margin-right: 1vmin;
+}
+
+.addInfo p {
+    margin-bottom: 1vmin;
+    text-align: start;
+    font-size: 2vmin;
+}
+
+.address {
+    padding-left: 5vmin;
+}
+
+.geo {
+    padding-left: 5vmin;
+}
+
+.company {
+    padding-left: 5vmin;
+}
+
+.wrapperArrow {
+    cursor: pointer;
+}
+
+.arrow {
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+    
+}

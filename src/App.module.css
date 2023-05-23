@@ -6,6 +6,7 @@
   display: grid;
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
   grid-template-rows: 8vmin 1fr;
   grid-template-columns: 1fr;
   grid-template-areas: 
@@ -25,14 +26,22 @@
   display: flex;
 }
 
-.menuBtn {
+.menuBtnOpen {
   position: absolute;
   cursor: pointer;
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 1.5vmin;
-  padding: 0;
   z-index: 10;
+  margin: 1.5vmin;
+  font-size: 3.5vmin;
+}
+
+.menuBtnClosed {
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1.5vmin;
   font-size: 3.5vmin;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./NavPage.module.css";
 import myAva from "../../assets/ava.jpg";
+import styles from "./NavPage.module.css";
 
 const NavPage = ({ openMenu, setOpenMenu }) => {
   return (
@@ -14,7 +14,7 @@ const NavPage = ({ openMenu, setOpenMenu }) => {
                 className={(navData) =>
                   navData.isActive ? styles.active : styles.item
                 }
-                to="/profile"
+                to="/aboutMe"
                 onClick={() => setOpenMenu(!openMenu)}
               >
                 <img className={styles.myAva} src={myAva} alt="Not found." />

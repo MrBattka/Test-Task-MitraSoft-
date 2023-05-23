@@ -1,0 +1,64 @@
+.wrapper {
+    width: 100%;
+    padding-top: 5vmin;
+    height: fit-content;
+    display: grid;
+    grid-template-rows: 35vmin 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a a"
+        "i i"
+    ;
+}
+
+.wrapperAddInf {
+    width: 100%;
+    grid-area: a;
+    display: flex;
+    justify-content: center;
+}
+
+.ava {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
+    width: 30vmin;
+    border-radius: 50%;
+    margin-right: 15vmin;
+}
+
+.addInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border: 1px solid white;
+    padding: 0 3vmin 0 3vmin;
+    box-shadow: 0 0 3px gray;
+    border-radius: 2vmin;
+}
+
+.addInf p {
+    margin: 0 0 2vmin 0;
+    font-size: 2.3vmin;
+}
+
+.wrapperAboutMe {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutMe {
+    width: 70%;
+    margin-top: 10vmin;
+    grid-area: i;
+}
+
+.aboutMe p {
+    font-size: 2vmin;
+    margin-bottom: 1.5vmin;
+}

@@ -1,0 +1,18 @@
+.wrapper {
+    border: 1px solid gray;
+    box-shadow: 0 0 3px gray;
+    margin-bottom: 1vmin;
+    padding: 2vmin;
+    border-radius: 1vmin;
+}
+
+.arrow {
+    width: 2vmin;
+    height: 2vmin;
+    margin-left: 1vmin;
+    margin-top: 1vmin;
+}
+
+.titleComments {
+    cursor: pointer;
+}

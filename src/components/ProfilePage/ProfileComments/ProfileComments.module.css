@@ -1,8 +1,7 @@
 .wrapper {
-    max-height: 100px;
     border: 1px solid red;
     border-radius: 1vmin;
+    padding: 2vmin;
     margin-bottom: 1vmin;
-    padding: 1vmin;
-    box-shadow: 0 0 3px gray;
+    box-shadow: 0 0 3px black;
 }
