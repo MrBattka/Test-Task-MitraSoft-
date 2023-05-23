@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/testTask/static/css/main.07331eff.css",
-    "main.js": "/testTask/static/js/main.571859b4.js",
-    "static/js/787.a1927c5c.chunk.js": "/testTask/static/js/787.a1927c5c.chunk.js",
-    "static/media/ava_posts.jpg": "/testTask/static/media/ava_posts.ebf8672e45bcd32c4bb3.jpg",
-    "static/media/ava.jpg": "/testTask/static/media/ava.50be7253902f9d3f2382.jpg",
-    "static/media/preloader.svg": "/testTask/static/media/preloader.3338677e2adc0e929e231558c0ff3d96.svg",
-    "index.html": "/testTask/index.html",
-    "main.07331eff.css.map": "/testTask/static/css/main.07331eff.css.map",
-    "main.571859b4.js.map": "/testTask/static/js/main.571859b4.js.map",
-    "787.a1927c5c.chunk.js.map": "/testTask/static/js/787.a1927c5c.chunk.js.map"
+    "main.css": "/Test-Task-MitraSoft-/static/css/main.07331eff.css",
+    "main.js": "/Test-Task-MitraSoft-/static/js/main.cfa4721a.js",
+    "static/js/787.a1927c5c.chunk.js": "/Test-Task-MitraSoft-/static/js/787.a1927c5c.chunk.js",
+    "static/media/ava_posts.jpg": "/Test-Task-MitraSoft-/static/media/ava_posts.ebf8672e45bcd32c4bb3.jpg",
+    "static/media/ava.jpg": "/Test-Task-MitraSoft-/static/media/ava.50be7253902f9d3f2382.jpg",
+    "static/media/preloader.svg": "/Test-Task-MitraSoft-/static/media/preloader.3338677e2adc0e929e231558c0ff3d96.svg",
+    "index.html": "/Test-Task-MitraSoft-/index.html",
+    "main.07331eff.css.map": "/Test-Task-MitraSoft-/static/css/main.07331eff.css.map",
+    "main.cfa4721a.js.map": "/Test-Task-MitraSoft-/static/js/main.cfa4721a.js.map",
+    "787.a1927c5c.chunk.js.map": "/Test-Task-MitraSoft-/static/js/787.a1927c5c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.07331eff.css",
-    "static/js/main.571859b4.js"
+    "static/js/main.cfa4721a.js"
   ]
 }
