@@ -16,6 +16,7 @@ import upArrow from "../../assets/upArrow.png";
 const ProfilePage = ({
   profile,
   setProfile,
+  openMenu,
   profilePosts,
   profileComments,
   setProfilePosts,
@@ -45,7 +46,7 @@ const ProfilePage = ({
 
   return (
     <>
-    <p className={styles.wrapperBackBtn}><NavLink to='/main'>Назад</NavLink></p>
+    {!openMenu && <p className={styles.wrapperBackBtn}><NavLink to='/main'>Назад</NavLink></p>}
     <div className={styles.wrapper}>
         
       <div className={styles.addInfo}>

@@ -1,24 +1,57 @@
+import axios from "axios";
 
-export const getPosts = (dispatch) => {
-  fetch("https://jsonplaceholder.typicode.com/posts")
-    .then((response) => response.json())
-    .then((json) => dispatch(json));
+const instance = axios.create({
+  withCredentials: true,
+  baseURL: `https://jsonplaceholder.typicode.com/`,
+});
+
+export const getPosts = async (dispatch) => {
+  try {
+    const res = instance.get(`posts`);
+    res.then((response) => dispatch(response.data));
+  } catch (err) {
+    if (axios.AxiosError(err)) {
+      console.log(err.response?.data.errText, "error");
+    } else if (err instanceof Error) {
+      console.log(err.message);
+    }
+  }
 };
 
 export const getComments = (dispatch) => {
-    fetch(`https://jsonplaceholder.typicode.com/comments`)
-    .then((response) => response.json())
-    .then((json) => dispatch(json));
-}
+  try {
+    const res = instance.get(`comments`);
+    res.then((response) => dispatch(response.data));
+  } catch (err) {
+    if (axios.AxiosError(err)) {
+      console.log(err.response?.data.errText, "error");
+    } else if (err instanceof Error) {
+      console.log(err.message);
+    }
+  }
+};
 
 export const getUsers = (dispatch) => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response) => response.json())
-    .then((json) => dispatch(json));
-}
-
+  try {
+    const res = instance.get(`users`);
+    res.then((response) => dispatch(response.data));
+  } catch (err) {
+    if (axios.AxiosError(err)) {
+      console.log(err.response?.data.errText, "error");
+    } else if (err instanceof Error) {
+      console.log(err.message);
+    }
+  }
+};
 export const getProfile = (dispatch, userId) => {
-    fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
-    .then((response) => response.json())
-    .then((json) => dispatch(json));
-}
+    try {
+        const res = instance.get(`users/${userId}`);
+        res.then((response) => dispatch(response.data))
+      } catch (err) {
+        if (axios.AxiosError(err)) {
+          console.log(err.response?.data.errText, "error");
+        } else if (err instanceof Error) {
+          console.log(err.message);
+        }
+      }
+};

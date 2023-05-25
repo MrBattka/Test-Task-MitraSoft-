@@ -5,20 +5,33 @@ import storage from "redux-persist/lib/storage";
 import postsReduser from "./posts-reduser";
 import usersReduser from "./users-reduser";
 import profileReduser from "./profile-reduser";
+import createSagaMiddleware from "redux-saga";
+import { configureStore } from "@reduxjs/toolkit";
+import mySaga from "../sagas/sagas";
 
-let reducers = combineReducers({
-    postsReduser: postsReduser,
-    usersReduser: usersReduser,
-    profileReduser: profileReduser
-})
+const reducer = combineReducers({
+  postsReduser: postsReduser,
+  usersReduser: usersReduser,
+  profileReduser: profileReduser,
+});
 
-const persistConfig = {
-    key: 'root',
-    storage: storage,
-    whitelist: ['settingPage', 'dialogsPage', 'profilePage']
-};
-const pReducer = persistReducer(persistConfig, reducers);
+const sagaMiddleware = createSagaMiddleware();
 
-export let store = createStore(pReducer)
+export const store = configureStore({
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(sagaMiddleware),
+  reducer,
+});
 
-export const persistor = persistStore(store)
+sagaMiddleware.run(mySaga);
+
+// const persistConfig = {
+//     key: 'root',
+//     storage: storage,
+//     whitelist: ['settingPage', 'dialogsPage', 'profilePage']
+// };
+// const pReducer = persistReducer(persistConfig, reducers)
+
+// export let store = createStore(pReducer)
+
+// export const persistor = persistStore(store)

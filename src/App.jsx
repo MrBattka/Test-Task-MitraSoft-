@@ -26,7 +26,7 @@ const App = ({ setPosts }) => {
         <Routes>
           <Route path="/main" element={<MainPageContainer />} />
           <Route path="/aboutme" element={<AboutMePage />} />
-          <Route path="/profile" element={<ProfilePageContainer />}>
+          <Route path="/profile" element={<ProfilePageContainer openMenu={openMenu} />}>
             <Route path=":userId" element={<ProfilePageContainer />} />
           </Route>
         </Routes>

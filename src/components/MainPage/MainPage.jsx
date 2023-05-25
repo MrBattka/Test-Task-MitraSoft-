@@ -15,10 +15,9 @@ const MainPage = ({
   setComments,
   setUsers,
 }) => {
-
   useEffect(() => {
     const timeFunc = setTimeout(() => {
-      getPosts(setPosts);
+      getPosts(setPosts)
       getUsers(setUsers);
     }, 500);
     return () => clearTimeout(timeFunc);

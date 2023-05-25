@@ -45,6 +45,7 @@
 
 .comments {
     max-height: 50vmin;
+    margin-top: 2vmin;
     overflow-y: scroll;
 }
 
